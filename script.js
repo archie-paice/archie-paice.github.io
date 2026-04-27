@@ -59,7 +59,7 @@
       const bioParagraphs = (about.bio || []).map(p => '<p>' + escHtml(p) + '</p>').join('');
       aboutContent.innerHTML =
         '<div class="about-photo">' +
-        '<img src="' + escHtml(about.photoSrc || '') + '" alt="' + escHtml(about.photoAlt || '') + '" />' +
+        '<img src="' + escHtml(about.photoSrc || '') + '" alt="' + escHtml(about.photoAlt || '') + '" onerror="this.classList.add(\'hidden\')" />' +
         '<div class="about-photo-placeholder" aria-hidden="true">' + escHtml(about.initials || '') + '</div>' +
         '</div>' +
         '<div class="about-text">' +
