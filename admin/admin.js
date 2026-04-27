@@ -53,7 +53,9 @@ async function fetchDataJson() {
 }
 
 async function saveDataJson(data, message) {
-  const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+  const json    = JSON.stringify(data, null, 2);
+  const bytes   = new TextEncoder().encode(json);
+  const content = btoa(String.fromCharCode(...bytes));
   const body    = JSON.stringify({ message, content, sha: fileSha });
   const res     = await fetch(apiBase() + '/contents/data.json', {
     method: 'PUT',
