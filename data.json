@@ -10,9 +10,9 @@
     "photoAlt": "Archie Paice",
     "initials": "AP",
     "bio": [
-      "I’ve always had a natural interest in technology and understanding how complex systems work, especially in areas like IT, cybersecurity, and aviation. I enjoy figuring things out, whether that’s solving a technical problem or learning something completely new.",
-      "Alongside that, I’m really into running and fitness. I’ve trained for longer distances like half marathons, and I enjoy the challenge of improving my endurance and staying consistent. It’s something that keeps me focused and balanced outside of everything else.",
-      "In my free time, I like exploring new ideas, keeping up with developments in tech, and working on personal projects. This website is a space where I can share those interests, track my progress, and put some of what I’m learning into practice."
+      "Iâve always had a natural interest in technology and understanding how complex systems work, especially in areas like IT, cybersecurity, and aviation. I enjoy figuring things out, whether thatâs solving a technical problem or learning something completely new.",
+      "Alongside that, Iâm really into running and fitness. Iâve trained for longer distances like half marathons, and I enjoy the challenge of improving my endurance and staying consistent. Itâs something that keeps me focused and balanced outside of everything else.",
+      "In my free time, I like exploring new ideas, keeping up with developments in tech, and working on personal projects. This website is a space where I can share those interests, track my progress, and put some of what Iâm learning into practice."
     ],
     "location": "United Kingdom",
     "email": "archie.paice@outlook.com",
@@ -24,7 +24,7 @@
   },
   "experience": [
     {
-      "date": "Month Year â Present",
+      "date": "Month Year Ã¢ÂÂ Present",
       "role": "Job Title",
       "company": "Company Name",
       "description": "Brief description of your role and key responsibilities or achievements.",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "date": "Month Year â Month Year",
+      "date": "Month Year Ã¢ÂÂ Month Year",
       "role": "Job Title",
       "company": "Company Name",
       "description": "Brief description of your role and key responsibilities or achievements.",
@@ -47,20 +47,20 @@
   ],
   "education": [
     {
-      "date": "Year â Present",
+      "date": "Year Ã¢ÂÂ Present",
       "degree": "Degree / Qualification",
       "institution": "Institution Name",
-      "description": "Brief description â e.g. modules studied, grade achieved, notable projects.",
+      "description": "Brief description Ã¢ÂÂ e.g. modules studied, grade achieved, notable projects.",
       "tags": [
         "Subject 1",
         "Subject 2"
       ]
     },
     {
-      "date": "Year â Year",
+      "date": "Year Ã¢ÂÂ Year",
       "degree": "A-Levels / GCSEs / Other",
       "institution": "School Name",
-      "description": "Brief description â e.g. subjects, grades.",
+      "description": "Brief description Ã¢ÂÂ e.g. subjects, grades.",
       "tags": []
     }
   ],
@@ -102,7 +102,7 @@
     },
     {
       "name": "Project Name",
-      "description": "Short description of the project â what it does, why you built it, and what you learned.",
+      "description": "Short description of the project Ã¢ÂÂ what it does, why you built it, and what you learned.",
       "githubUrl": "https://github.com/archie-paice/[YOUR-REPO-2]",
       "liveUrl": "",
       "tags": [
