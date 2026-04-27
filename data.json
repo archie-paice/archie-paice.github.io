@@ -108,23 +108,6 @@
         "Tech 1",
         "Tech 2"
       ]
-    },
-    {
-      "name": "Project Name",
-      "description": "Short description of the project â what it does, why you built it, and what you learned.",
-      "githubUrl": "https://github.com/archie-paice/[YOUR-REPO-3]",
-      "liveUrl": "",
-      "tags": [
-        "Tech 1",
-        "Tech 2"
-      ]
-    },
-    {
-      "name": "",
-      "description": "",
-      "githubUrl": "",
-      "liveUrl": "",
-      "tags": []
     }
   ],
   "contact": {
