@@ -63,8 +63,8 @@ async function saveDataJson(data, message) {
     body
   });
   if (!res.ok) throw new Error('HTTP ' + res.status + ': ' + (await res.text()));
-  const json = await res.json();
-  fileSha = json.content.sha;
+  const result = await res.json();
+  fileSha = result.content.sha;
 }
 
 /* ── Login ── */
