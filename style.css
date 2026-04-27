@@ -580,6 +580,15 @@ footer p { color: var(--color-text-muted); font-size: 0.875rem; }
 
 .footer-socials a:hover { color: var(--color-primary); }
 
+.footer-admin-link {
+  color: var(--color-border);
+  font-size: 0.75rem;
+  transition: color var(--transition);
+  margin-left: 0.5rem;
+}
+
+.footer-admin-link:hover { color: var(--color-text-muted); }
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   /* Mobile nav */

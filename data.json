@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "name": "Archie Paice",
+    "tagline": "Student · Developer · Creator",
+    "githubUrl": "https://github.com/archie-paice",
+    "linkedinUrl": "https://www.linkedin.com/in/[YOUR-LINKEDIN-HANDLE]"
+  },
+  "about": {
+    "photoAlt": "Archie Paice",
+    "photoSrc": "assets/profile.jpg",
+    "initials": "AP",
+    "bio": [
+      "Hello! I'm Archie Paice, a passionate developer and student with a love for building things that live on the internet. I enjoy turning ideas into reality through clean code and thoughtful design.",
+      "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, and pushing the boundaries of what's possible."
+    ],
+    "location": "United Kingdom",
+    "email": "your@email.com",
+    "githubUrl": "https://github.com/archie-paice",
+    "githubHandle": "archie-paice",
+    "linkedinUrl": "https://www.linkedin.com/in/[YOUR-LINKEDIN-HANDLE]",
+    "linkedinHandle": "[YOUR-LINKEDIN-HANDLE]",
+    "cvUrl": "assets/cv.pdf"
+  },
+  "experience": [
+    {
+      "date": "Month Year – Present",
+      "role": "Job Title",
+      "company": "Company Name",
+      "description": "Brief description of your role and key responsibilities or achievements.",
+      "tags": ["Skill 1", "Skill 2", "Skill 3"]
+    },
+    {
+      "date": "Month Year – Month Year",
+      "role": "Job Title",
+      "company": "Company Name",
+      "description": "Brief description of your role and key responsibilities or achievements.",
+      "tags": ["Skill 1", "Skill 2"]
+    }
+  ],
+  "education": [
+    {
+      "date": "Year – Present",
+      "degree": "Degree / Qualification",
+      "institution": "Institution Name",
+      "description": "Brief description — e.g. modules studied, grade achieved, notable projects.",
+      "tags": ["Subject 1", "Subject 2"]
+    },
+    {
+      "date": "Year – Year",
+      "degree": "A-Levels / GCSEs / Other",
+      "institution": "School Name",
+      "description": "Brief description — e.g. subjects, grades.",
+      "tags": []
+    }
+  ],
+  "extracurriculars": [
+    {
+      "icon": "fas fa-code",
+      "title": "Hackathons",
+      "description": "Participated in multiple hackathons, building projects under time pressure and collaborating with teams."
+    },
+    {
+      "icon": "fas fa-users",
+      "title": "Society / Club",
+      "description": "Active member of a technology / computing society, organising events and workshops."
+    },
+    {
+      "icon": "fas fa-volleyball-ball",
+      "title": "Sport / Hobby",
+      "description": "Brief description of a sport or personal hobby you enjoy outside of academics."
+    },
+    {
+      "icon": "fas fa-hands-helping",
+      "title": "Volunteering",
+      "description": "Volunteer at community events, contributing time and skills to help others."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project Name",
+      "description": "Short description of the project — what it does, why you built it, and what you learned.",
+      "githubUrl": "https://github.com/archie-paice/[YOUR-REPO]",
+      "liveUrl": "",
+      "tags": ["Tech 1", "Tech 2", "Tech 3"]
+    },
+    {
+      "name": "Project Name",
+      "description": "Short description of the project — what it does, why you built it, and what you learned.",
+      "githubUrl": "https://github.com/archie-paice/[YOUR-REPO-2]",
+      "liveUrl": "",
+      "tags": ["Tech 1", "Tech 2"]
+    },
+    {
+      "name": "Project Name",
+      "description": "Short description of the project — what it does, why you built it, and what you learned.",
+      "githubUrl": "https://github.com/archie-paice/[YOUR-REPO-3]",
+      "liveUrl": "",
+      "tags": ["Tech 1", "Tech 2"]
+    }
+  ],
+  "contact": {
+    "email": "your@email.com",
+    "githubUrl": "https://github.com/archie-paice",
+    "linkedinUrl": "https://www.linkedin.com/in/[YOUR-LINKEDIN-HANDLE]",
+    "formspreeId": "mvzdnvaw"
+  }
+}

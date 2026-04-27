@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Archie Paice</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- ===================== LOGIN ===================== -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo"><i class="fas fa-lock"></i></div>
+      <h1>Website Admin</h1>
+      <p class="login-sub">Sign in with your GitHub Personal Access Token to manage your portfolio content.</p>
+
+      <form id="login-form" novalidate>
+        <div class="field-group">
+          <label for="pat-input">GitHub Personal Access Token</label>
+          <input
+            type="password"
+            id="pat-input"
+            placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+            autocomplete="off"
+            required
+          />
+          <span class="field-hint">Needs <code>contents:write</code> permission. Stored in session only — never saved.</span>
+        </div>
+        <div class="field-row">
+          <div class="field-group">
+            <label for="owner-input">Repository Owner</label>
+            <input type="text" id="owner-input" value="archie-paice" required />
+          </div>
+          <div class="field-group">
+            <label for="repo-input">Repository Name</label>
+            <input type="text" id="repo-input" value="archie-paice.github.io" required />
+          </div>
+        </div>
+        <p id="login-error" class="error-msg" aria-live="polite"></p>
+        <button type="submit" class="btn btn-primary" id="login-btn">
+          <i class="fas fa-sign-in-alt"></i> Sign In
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================== DASHBOARD ===================== -->
+  <div id="dashboard" class="dashboard hidden">
+
+    <header class="dash-header">
+      <div class="dash-header-inner">
+        <span class="dash-title"><i class="fas fa-pencil-alt"></i> Portfolio Admin</span>
+        <div class="dash-header-actions">
+          <button class="btn btn-primary" id="save-btn">
+            <i class="fas fa-cloud-upload-alt"></i> Save &amp; Publish
+          </button>
+          <button class="btn btn-outline" id="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </div>
+      <p id="save-status" class="save-status" aria-live="polite"></p>
+    </header>
+
+    <div class="dash-body">
+
+      <!-- Sidebar tabs -->
+      <nav class="dash-sidebar">
+        <button class="tab-btn active" data-tab="hero"><i class="fas fa-home"></i> Hero</button>
+        <button class="tab-btn" data-tab="about"><i class="fas fa-user"></i> About</button>
+        <button class="tab-btn" data-tab="experience"><i class="fas fa-briefcase"></i> Experience</button>
+        <button class="tab-btn" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
+        <button class="tab-btn" data-tab="extracurriculars"><i class="fas fa-star"></i> Extracurriculars</button>
+        <button class="tab-btn" data-tab="projects"><i class="fas fa-folder-open"></i> Projects</button>
+        <button class="tab-btn" data-tab="contact"><i class="fas fa-envelope"></i> Contact</button>
+      </nav>
+
+      <!-- Tab panels -->
+      <main class="dash-content">
+
+        <!-- HERO -->
+        <section class="tab-panel active" id="tab-hero">
+          <h2>Hero Section</h2>
+          <div class="field-group">
+            <label>Name</label>
+            <input type="text" id="hero-name" />
+          </div>
+          <div class="field-group">
+            <label>Tagline</label>
+            <input type="text" id="hero-tagline" />
+          </div>
+          <div class="field-group">
+            <label>GitHub URL</label>
+            <input type="url" id="hero-github" />
+          </div>
+          <div class="field-group">
+            <label>LinkedIn URL</label>
+            <input type="url" id="hero-linkedin" />
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="tab-panel hidden" id="tab-about">
+          <h2>About Me</h2>
+          <div class="field-group">
+            <label>Profile Photo Path (e.g. assets/profile.jpg)</label>
+            <input type="text" id="about-photo-src" />
+          </div>
+          <div class="field-group">
+            <label>Photo Alt Text</label>
+            <input type="text" id="about-photo-alt" />
+          </div>
+          <div class="field-group">
+            <label>Initials (shown when photo missing)</label>
+            <input type="text" id="about-initials" maxlength="4" />
+          </div>
+          <div class="field-group">
+            <label>Bio Paragraphs <span class="field-hint">(one paragraph per line)</span></label>
+            <textarea id="about-bio" rows="6"></textarea>
+          </div>
+          <div class="field-row">
+            <div class="field-group">
+              <label>Location</label>
+              <input type="text" id="about-location" />
+            </div>
+            <div class="field-group">
+              <label>Email</label>
+              <input type="email" id="about-email" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-group">
+              <label>GitHub URL</label>
+              <input type="url" id="about-github-url" />
+            </div>
+            <div class="field-group">
+              <label>GitHub Handle</label>
+              <input type="text" id="about-github-handle" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-group">
+              <label>LinkedIn URL</label>
+              <input type="url" id="about-linkedin-url" />
+            </div>
+            <div class="field-group">
+              <label>LinkedIn Handle</label>
+              <input type="text" id="about-linkedin-handle" />
+            </div>
+          </div>
+          <div class="field-group">
+            <label>CV / Résumé URL (e.g. assets/cv.pdf)</label>
+            <input type="text" id="about-cv-url" />
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="tab-panel hidden" id="tab-experience">
+          <div class="panel-header">
+            <h2>Work Experience</h2>
+            <button class="btn btn-sm btn-primary" id="add-experience">
+              <i class="fas fa-plus"></i> Add Entry
+            </button>
+          </div>
+          <div id="experience-list" class="item-list"></div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="tab-panel hidden" id="tab-education">
+          <div class="panel-header">
+            <h2>Education</h2>
+            <button class="btn btn-sm btn-primary" id="add-education">
+              <i class="fas fa-plus"></i> Add Entry
+            </button>
+          </div>
+          <div id="education-list" class="item-list"></div>
+        </section>
+
+        <!-- EXTRACURRICULARS -->
+        <section class="tab-panel hidden" id="tab-extracurriculars">
+          <div class="panel-header">
+            <h2>Extracurriculars</h2>
+            <button class="btn btn-sm btn-primary" id="add-extracurricular">
+              <i class="fas fa-plus"></i> Add Card
+            </button>
+          </div>
+          <div id="extracurriculars-list" class="item-list"></div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="tab-panel hidden" id="tab-projects">
+          <div class="panel-header">
+            <h2>Projects</h2>
+            <button class="btn btn-sm btn-primary" id="add-project">
+              <i class="fas fa-plus"></i> Add Project
+            </button>
+          </div>
+          <div id="projects-list" class="item-list"></div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="tab-panel hidden" id="tab-contact">
+          <h2>Contact</h2>
+          <div class="field-group">
+            <label>Email</label>
+            <input type="email" id="contact-email" />
+          </div>
+          <div class="field-group">
+            <label>GitHub URL</label>
+            <input type="url" id="contact-github" />
+          </div>
+          <div class="field-group">
+            <label>LinkedIn URL</label>
+            <input type="url" id="contact-linkedin" />
+          </div>
+          <div class="field-group">
+            <label>Formspree Form ID <span class="field-hint">(from formspree.io/f/<strong>ID</strong>)</span></label>
+            <input type="text" id="contact-formspree" />
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
