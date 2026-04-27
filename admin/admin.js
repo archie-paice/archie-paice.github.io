@@ -49,7 +49,10 @@ async function fetchDataJson() {
   if (!res.ok) throw new Error('HTTP ' + res.status + ': ' + (await res.text()));
   const json = await res.json();
   fileSha = json.sha;
-  return JSON.parse(atob(json.content.replace(/\s/g, '')));
+  const binary = atob(json.content.replace(/\s/g, ''));
+  const bytes  = Uint8Array.from(binary, c => c.charCodeAt(0));
+  const text   = new TextDecoder('utf-8').decode(bytes);
+  return JSON.parse(text);
 }
 
 async function saveDataJson(data, message) {
