@@ -24,7 +24,7 @@
   },
   "experience": [
     {
-      "date": "Month Year Ã¢ÂÂ Present",
+      "date": "Month Year – Present",
       "role": "Job Title",
       "company": "Company Name",
       "description": "Brief description of your role and key responsibilities or achievements.",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "date": "Month Year Ã¢ÂÂ Month Year",
+      "date": "Month Year – Month Year",
       "role": "Job Title",
       "company": "Company Name",
       "description": "Brief description of your role and key responsibilities or achievements.",
@@ -47,20 +47,20 @@
   ],
   "education": [
     {
-      "date": "Year Ã¢ÂÂ Present",
+      "date": "Year – Present",
       "degree": "Degree / Qualification",
       "institution": "Institution Name",
-      "description": "Brief description Ã¢ÂÂ e.g. modules studied, grade achieved, notable projects.",
+      "description": "Brief description — e.g. modules studied, grade achieved, notable projects.",
       "tags": [
         "Subject 1",
         "Subject 2"
       ]
     },
     {
-      "date": "Year Ã¢ÂÂ Year",
+      "date": "Year – Year",
       "degree": "A-Levels / GCSEs / Other",
       "institution": "School Name",
-      "description": "Brief description Ã¢ÂÂ e.g. subjects, grades.",
+      "description": "Brief description — e.g. subjects, grades.",
       "tags": []
     }
   ],
@@ -102,7 +102,7 @@
     },
     {
       "name": "Project Name",
-      "description": "Short description of the project Ã¢ÂÂ what it does, why you built it, and what you learned.",
+      "description": "Short description of the project — what it does, why you built it, and what you learned.",
       "githubUrl": "https://github.com/archie-paice/[YOUR-REPO-2]",
       "liveUrl": "",
       "tags": [
