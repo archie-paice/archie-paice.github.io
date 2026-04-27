@@ -127,8 +127,9 @@
 
     /* ── LinkedIn CTA ── */
     const linkedinCta = document.getElementById('linkedin-cta');
-    if (linkedinCta && (data.hero || {}).linkedinUrl) {
-      linkedinCta.href = data.hero.linkedinUrl;
+    if (linkedinCta) {
+      const url = (data.hero || {}).linkedinUrl || (data.contact || {}).linkedinUrl || '';
+      if (url) linkedinCta.href = url;
     }
 
     /* ── Contact links ── */
@@ -248,7 +249,7 @@
     }
 
     if (!action || action === '#' || action.includes('YOUR-FORM-ID')) {
-      setStatus('Form not yet configured — please set the Formspree ID in data.json.', 'error');
+      setStatus('Contact form not configured — please set the Formspree ID via the admin panel.', 'error');
       return;
     }
 
