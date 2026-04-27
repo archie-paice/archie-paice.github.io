@@ -61,7 +61,14 @@
       "degree": "T-Level",
       "institution": "Chichester College Group",
       "description": "Brief description — e.g. subjects, grades.",
-      "tags": []
+      "tags": [
+        "Microsoft SQL Server",
+        "Net 8",
+        "C#",
+        "Teamwork",
+        "Collaboration",
+        "Python"
+      ]
     }
   ],
   "extracurriculars": [
